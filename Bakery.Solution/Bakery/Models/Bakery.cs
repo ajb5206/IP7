@@ -19,9 +19,33 @@ namespace Bakery
 
 	public class Pastry
 	{
-		public int PastryCost(int pAmount)
+		public int? PastryCost(int pAmount)
 		{
-			return (2 * pAmount);
+			if (pAmount < 3)
+			{
+				return pAmount * 2;
+			}
+			else if (pAmount == 3)
+			{
+				return 5;
+			}
+			else if (pAmount == 4)
+			{
+				return 7;
+			}
+			else if (pAmount == 5)
+			{
+				return 9;
+			}
+			else if (pAmount == 6)
+			{
+				return 10;
+			}
+			else
+			{
+				return null;
+				// Console.WriteLine("I'm sorry, we don't have enough pastries to accommodate your order!");
+			}
 		}
 	}
 }
