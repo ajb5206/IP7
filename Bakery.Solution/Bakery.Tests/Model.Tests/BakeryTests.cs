@@ -35,5 +35,11 @@ namespace Bakery.Tests
 			Pastry testPastry = new Pastry();
 			Assert.AreEqual(9, testPastry.PastryCost(5));
 		}
+		[TestMethod]
+		public void PastryCost_ReturnsNullIfGreaterThanSeven_Null()
+		{
+			Pastry testPastry = new Pastry();
+			Assert.AreEqual(null, testPastry.PastryCost(8));
+		}
 	}
 }

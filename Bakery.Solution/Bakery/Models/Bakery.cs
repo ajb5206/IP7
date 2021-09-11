@@ -44,7 +44,6 @@ namespace Bakery
 			else
 			{
 				return null;
-				// Console.WriteLine("I'm sorry, we don't have enough pastries to accommodate your order!");
 			}
 		}
 	}
