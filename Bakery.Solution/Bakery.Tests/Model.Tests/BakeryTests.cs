@@ -13,6 +13,12 @@ namespace Bakery.Tests
 			Bread testBread = new Bread();
 			Assert.AreEqual(5, testBread.BreadCost(1));
 		}
+		[TestMethod]
+		public void BreadCost_ReturnsCostTimesAmountUpdated_FortyFive()
+		{
+			Bread testBread = new Bread();
+			Assert.AreEqual(45, testBread.BreadCost(13));
+		}
 	}
 	[TestClass]
 	public class PastryTests

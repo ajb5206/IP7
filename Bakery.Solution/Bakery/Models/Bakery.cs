@@ -6,7 +6,18 @@ namespace Bakery
 	{
 		public int BreadCost(int bAmount)
 		{
-			return (5 * bAmount);
+			if(bAmount < 3)
+			{
+				return (5 * bAmount);
+			}
+			else if (bAmount % 3 == 0)
+			{
+				return (5 * (bAmount - (bAmount/3)));
+			}
+			else
+			{
+				return (5 * (bAmount - ((bAmount - bAmount%3)/3)));
+			}
 		}
 	}
 
