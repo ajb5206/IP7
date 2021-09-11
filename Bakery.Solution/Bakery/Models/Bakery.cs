@@ -6,7 +6,7 @@ namespace Bakery
 	{
 		public int BreadCost(int bAmount)
 		{
-			return 5;
+			return (5 * bAmount);
 		}
 	}
 
@@ -14,7 +14,7 @@ namespace Bakery
 	{
 		public int PastryCost(int pAmount)
 		{
-			return 2;
+			return (2 * pAmount);
 		}
 	}
 }
