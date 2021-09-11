@@ -1,6 +1,6 @@
 using System;
 
-namespace Bakery
+namespace Bakery.Models
 {
 	public class Bread
 	{
@@ -47,4 +47,16 @@ namespace Bakery
 			}
 		}
 	}
+
+	// public class Customer
+	// {
+	// 	public int BreadAmount { get; }
+	// 	public int PastryAmount {get; }
+
+	// 	public Customer (int bread, int pastry)
+	// 	{
+	// 		BreadAmount = bread;
+	// 		PastryAmount = pastry;
+	// 	}
+	// }
 }
