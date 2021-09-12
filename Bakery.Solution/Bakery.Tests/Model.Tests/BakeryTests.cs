@@ -10,14 +10,14 @@ namespace Bakery.Tests
 		[TestMethod]
 		public void BreadCost_ReturnsCostTimesAmount_Five()
 		{
-			Bread testBread = new Bread();
-			Assert.AreEqual(5, testBread.BreadCost(1));
+			Bread testBread = new Bread(1);
+			Assert.AreEqual(5, testBread.BreadCost);
 		}
 		[TestMethod]
 		public void BreadCost_ReturnsCostTimesAmountUpdated_FortyFive()
 		{
-			Bread testBread = new Bread();
-			Assert.AreEqual(45, testBread.BreadCost(13));
+			Bread testBread = new Bread(13);
+			Assert.AreEqual(45, testBread.BreadCost);
 		}
 	}
 	[TestClass]
@@ -26,20 +26,20 @@ namespace Bakery.Tests
 		[TestMethod]
 		public void PastryCost_ReturnsCostTimesAmount_Two()
 		{
-			Pastry testPastry = new Pastry();
-			Assert.AreEqual(2, testPastry.PastryCost(1));
+			Pastry testPastry = new Pastry(1);
+			Assert.AreEqual(2, testPastry.PastryCost);
 		}
 		[TestMethod]
 		public void PastryCost_ReturnsCostForFivePastries_Nine()
 		{
-			Pastry testPastry = new Pastry();
-			Assert.AreEqual(9, testPastry.PastryCost(5));
+			Pastry testPastry = new Pastry(5);
+			Assert.AreEqual(9, testPastry.PastryCost);
 		}
 		[TestMethod]
-		public void PastryCost_ReturnsNullIfGreaterThanSeven_Null()
+		public void PastryCost_ReturnsDoubleIfGreaterThanSix_DoubleInput()
 		{
-			Pastry testPastry = new Pastry();
-			Assert.AreEqual(null, testPastry.PastryCost(8));
+			Pastry testPastry = new Pastry(8);
+			Assert.AreEqual(16, testPastry.PastryCost);
 		}
 	}
 }
