@@ -16,7 +16,7 @@ namespace Bakery
 			string pastries = Console.ReadLine();
 			int pAmount = int.Parse(pastries);
 			Pastry userPastry = new Pastry(pAmount);
-			int total = userBread.GetBreadTotal() + userPastry.GetPastryTotal();
+			int total = userBread.BreadCost + userPastry.PastryCost;
 			Console.WriteLine($"Your total is ${total}, thank you!");
 			
 		}
