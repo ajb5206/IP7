@@ -17,11 +17,6 @@ namespace Bakery.Models
 				BreadCost = (5 * (bAmount - ((bAmount - bAmount%3)/3)));
 			}
 		}
-
-		// public int GetBreadTotal()
-		// {
-		// 	return _breadCost;
-		// }
 	}
 
 	public class Pastry
@@ -55,10 +50,5 @@ namespace Bakery.Models
 				PastryCost = pAmount * 2;
 			}
 		}
-
-		// public int GetPastryTotal()
-		// {
-		// 	return _pastryCost;
-		// }
 	}
 }
