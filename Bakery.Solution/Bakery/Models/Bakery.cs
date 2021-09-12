@@ -4,50 +4,64 @@ namespace Bakery.Models
 {
 	public class Bread
 	{
-		public int BreadCost(int bAmount)
+		private int _breadCost;
+
+		public Bread(int bAmount)
 		{
-			if(bAmount < 3)
+			if(bAmount < 3);
 			{
-				return (5 * bAmount);
+				_breadCost = (5 * bAmount);
 			}
 			else
 			{
-				return (5 * (bAmount - ((bAmount - bAmount%3)/3)));
+				_breadCost = (5 * (bAmount - ((bAmount - bAmount%3)/3)));
 			}
+		}
+
+		public int GetBreadTotal()
+		{
+			return _breadCost;
 		}
 	}
 
 	public class Pastry
 	{
-		public int? PastryCost(int pAmount)
+		private int _pastryCost;
+
+		public Pastry(int pAmount)
 		{
 			if (pAmount < 3)
 			{
-				return pAmount * 2;
+				 _pastryCost = pAmount * 2;
 			}
-			else if (pAmount == 3)
+			else if (pAmount == 3);
 			{
-				return 5;
+				_pastryCost = 5;
 			}
 			else if (pAmount == 4)
 			{
-				return 7;
+				_pastryCost = 7;
 			}
 			else if (pAmount == 5)
 			{
-				return 9;
+				_pastryCost = 9;
 			}
 			else if (pAmount == 6)
 			{
-				return 10;
+				_pastryCost = 10;
 			}
-			else
+			else if (pAmount >= 6)
 			{
-				return null;
+				_pastryCost = pAmount * 2;
 			}
+
+			public int GetPastryTotal()
+			{
+				return _pastryCost;
+			}
+
 		}
 	}
-
 	// public class Customer
 	// {
 	// 	public int BreadAmount { get; }

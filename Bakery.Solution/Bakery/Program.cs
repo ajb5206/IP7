@@ -15,18 +15,9 @@ namespace Bakery
 			int bAmount = int.Parse(loaves);
 			Console.WriteLine("How many pastries would you like to buy?");
 			string pastries = Console.ReadLine();
-			int pAmount = int.Parse(pastries);
-			if (userPastry.PastryCost(pAmount) == null )
-			{
-				Console.WriteLine("I'm sorry, we do not have that many pastries left!");
-				Console.WriteLine("Please choose 6 or fewer pastries");
-				Console.WriteLine("\r\n\r\n");
-				Main();
-			}
-			else
-			{
-					Console.WriteLine($"Your total is ${userPastry.PastryCost(pAmount) + userBread.BreadCost(bAmount)}, thank you!");
-			}
+			int total = userBread.GetBreadTotal() + userPastry.GetPastryTotal();
+			Console.WriteLine($"Your total is ${total}, thank you!");
+			
 		}
 	}
 }
