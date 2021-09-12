@@ -36,7 +36,7 @@ Welcome to the Bakery, we have a wonderful three for the price of two special on
 
 
 ## Known Bugs <a id="knownbugs"></a>
-* No known bugs at the moment
+* Cannot handle non-interger user inputs
 
 ## License
 Copyright <2021> <MIT>
