@@ -2,7 +2,7 @@
 
 # Bakery
 
-#### Welcome to the Bakery, please enter your desired quantities of goods!
+#### Welcome to the Bakery!
 
 #### **By Alex Bertotto**
 #### Table of Contents
@@ -16,7 +16,6 @@
 
 ## Technologies Used <a id="technologies"></a>
 
-
 * C#
 * dotnet
 * Microsoft NET 5.0
@@ -24,16 +23,15 @@
 
 ## Description <a id="description"></a>
 
-Welcome to the Bakery, we have a wonderful three for the price of two special on bread. Pastries may be limited.
+Welcome to the Bakery, we have a wonderful three for the price of two special on bread. Get a deal on
+pastries when you buy in bulk.
 
 ## Setup/Installation Requirements <a id="setup/install"></a>
-
 
 1. Clone the project to your current directory using the following command: git clone https://github.com/ajb5206/IP7
 2. Navigate to the root folder in the command line
 3. Run the command _`dotnet restore`_
 4. Run `dotnet run`
-
 
 ## Known Bugs <a id="knownbugs"></a>
 * Cannot handle non-interger user inputs
