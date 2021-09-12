@@ -8,7 +8,7 @@ namespace Bakery.Models
 
 		public Bread(int bAmount)
 		{
-			if(bAmount < 3);
+			if (bAmount < 3)
 			{
 				_breadCost = (5 * bAmount);
 			}
@@ -34,7 +34,7 @@ namespace Bakery.Models
 			{
 				 _pastryCost = pAmount * 2;
 			}
-			else if (pAmount == 3);
+			else if (pAmount == 3)
 			{
 				_pastryCost = 5;
 			}
@@ -54,12 +54,11 @@ namespace Bakery.Models
 			{
 				_pastryCost = pAmount * 2;
 			}
-
-			public int GetPastryTotal()
-			{
-				return _pastryCost;
-			}
-
+		}
+		
+		public int GetPastryTotal()
+		{
+			return _pastryCost;
 		}
 	}
 	// public class Customer
