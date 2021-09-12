@@ -55,21 +55,10 @@ namespace Bakery.Models
 				_pastryCost = pAmount * 2;
 			}
 		}
-		
+
 		public int GetPastryTotal()
 		{
 			return _pastryCost;
 		}
 	}
-	// public class Customer
-	// {
-	// 	public int BreadAmount { get; }
-	// 	public int PastryAmount {get; }
-
-	// 	public Customer (int bread, int pastry)
-	// 	{
-	// 		BreadAmount = bread;
-	// 		PastryAmount = pastry;
-	// 	}
-	// }
 }
