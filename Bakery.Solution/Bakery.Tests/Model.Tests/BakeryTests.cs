@@ -30,6 +30,12 @@ namespace Bakery.Tests
 	public class PastryTests
 	{
 		[TestMethod]
+		public void PastryConstructor_CreatesInstanceOfPastry_Pastries()
+		{
+			Pastry testPastry = new Pastry(1);
+			Assert.AreEqual(typeof(Pastry), testPastry.GetType());
+		}
+		[TestMethod]
 		public void PastryCost_ReturnsCostTimesAmount_Two()
 		{
 			Pastry testPastry = new Pastry(1);
