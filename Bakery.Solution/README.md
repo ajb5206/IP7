@@ -30,8 +30,11 @@ pastries when you buy in bulk.
 
 1. Clone the project to your current directory using the following command: git clone https://github.com/ajb5206/IP7
 2. Navigate to the root folder in the command line
-3. Run the command _`dotnet restore`_
-4. Run `dotnet run`
+3. Run the command _`dotnet restore`_ to install the packages listed in the _`.csprfoj`_ file 
+	 as well as creating the _`obj`_ file
+4. Run _`dotnet build`_ to create internal content including the _`bin`_ file
+5. To run tests, use _`dotnet test`_ in the Bakery.Tests folder
+6. Run `dotnet run`
 
 ## Known Bugs <a id="knownbugs"></a>
 * Cannot handle non-interger user inputs
